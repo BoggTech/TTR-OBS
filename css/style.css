@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Impress BT';
+    src: url('../fonts/ImpressBT-Regular.woff2') format('woff2'),
+        url('../fonts/ImpressBT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minnie';
+    src: url('../fonts/Minnie.woff2') format('woff2'),
+        url('../fonts/Minnie.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.task-container {
+    height: 400px;
+    width: 600px;
+    position: absolute;
+    top: 0px;
+}
+
+.horizontal-one {
+    left:50px;
+}
+
+.horizontal-two {
+    left:650px;
+}
+
+.horizontal-three {
+    left:1250px;
+}
+
+.horizontal-four {
+    left:1850px;
+}
+
+.vertical-one {
+    left:50px;
+}
+
+.vertical-two {
+    left:50px;
+    top:400px;
+}
+
+.vertical-three {
+    left:50px;
+    top:800px;
+}
+
+.vertical-four {
+    left:50px;
+    top:1200px;
+}
+
+.task-progress-frame {
+    border-image: url(../assets/task_frame.png) 9 fill repeat;
+    border-image-slice: 2.5;
+    border-width: 6px;
+    border-style: solid;
+}
+
+.outer-progress {
+    top: 280px; 
+    left: 150px; 
+    position: absolute; 
+    background-color: #f0dfb4; 
+    width: 300px; 
+    height: 25px;
+}
+
+.inner-progress {
+    background-color: #7fb37f; 
+    height:24px;
+    width:25%; 
+    height: 100%;
+}
+
+.task-scroll {
+    position: absolute; 
+    height: 400px;
+    width: 600px;
+}
+
+.text {
+    top: 100px; 
+    position: absolute; 
+    font-size: 44px; 
+    text-align: center; 
+    width: 600px; 
+    font-family: "Impress BT";
+    color: #4f4335;
+}
+
+.middle-text {
+    padding-left: 40px;
+    max-width: 520px;
+}
+
+.progress-text {
+    right: -150px;
+    top: -5px;
+    position: absolute; 
+    font-size: 28px; 
+    text-align: center; 
+    width: 600px; 
+    height: 600px;
+    font-family: "Impress BT";
+    color: #0f2567;
+}
+
+.just-for-fun-text {
+    text-shadow: 1.5px 1.5px #0f2f58;
+    top: 50px;
+    left: -200px;
+    position: absolute; 
+    font-size: 26px; 
+    text-align: center; 
+    font-family: "Impress BT";
+    color: #016ffc;
+    transform: rotate(-25deg);
+}
+
+.task-title-text {
+    top: 17px;
+    position: absolute; 
+    font-size: 36px; 
+    text-align: center; 
+    width: 600px; 
+    height: 600px;
+    font-family: "Minnie";
+    color: #4f4335;
+}
+
+.no-margin {
+    margin: 0px;
+}
