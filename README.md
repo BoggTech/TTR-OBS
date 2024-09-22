@@ -1,3 +1,5 @@
+<h1 align="center"><a href="https://github.com/BoggTech/TTR-OBS/archive/refs/heads/master.zip">DOWNLOAD THE ZIP HERE</a></h1>
+
 # Toontown Rewritten OBS Overlay
 An overlay developed in HTML/JS designed to display data grabbed from the companion app API.
 
