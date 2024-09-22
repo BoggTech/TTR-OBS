@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/36c11fa5-80ae-4083-9395-12886ec5cc3b
 
 https://github.com/user-attachments/assets/0f10f265-2c6c-4958-b563-cbdee96c4ed0
 
-You should be **ready to go!** Please note that, for security reasons, you will have to repeat step 3 every time you restart OBS.
+You should be **ready to go!** You will have to repeat step 3 every time you restart Toontown Rewritten.
 
 # Browser Source Information
 ## html/toontask-horizontal.html 

@@ -9,7 +9,7 @@ function update_data() {
         hide_all_scrolls();
         if (error.code == 403) {
             // hey :(...
-            sessionStorage.removeItem(token_str);
+            localStorage.removeItem(token_str);
             setTimeout(setup_toontask_loop, timeout);
         } else {
             setTimeout(update_data, timeout);
@@ -85,11 +85,11 @@ function hide_all_scrolls() {
 
 function setup_toontask_loop() {
     hide_all_scrolls();
-    let token = sessionStorage.getItem(token_str);
+    let token = localStorage.getItem(token_str);
     if (token == null) {
         // we have no token. we'll generate one.
         token = makeid(32);
-        sessionStorage.setItem(token_str, token);
+        localStorage.setItem(token_str, token);
     }
     test = new ToonData(1547, token, "OBS Toon Overlay");
     update_data();
