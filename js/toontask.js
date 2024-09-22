@@ -39,7 +39,7 @@ function update_toontasks_and_loop() {
             let objective = test.getTaskObjective(i);
             
             // SPECIFIC EXCEPTIONS for some task types
-            if (objective == "Visit") { // weird. but works. visit tasks only show as "visit"
+            if (objective == "Visit") { // weird. but works. visit tasks only show as "visit", with no location, so lets grab the location ourselves.
                 objective = objective + " " + test.getTaskToNpcName(i)
                 place = test.getTaskToNpcBuilding(i);
                 if (!place)
@@ -55,18 +55,38 @@ function update_toontasks_and_loop() {
             document.getElementById("text" + i).textContent = objective;
             document.getElementById("where" + i).textContent = location;
             progress = test.getTaskProgressText(i);
-            if ( progress ) {
+            if ( progress && progress != "Not chosen" ) { // hide the bar if there's no progress string OR if they want us to choose a gag (choose task does not return nothing)
                 let current = test.getCurrentTaskProgress(i);
                 let target = test.getCurrentTaskTarget(i);
                 let percent = Math.max(0, Math.min(1, current/target))
+                if ( target < 1 ) {
+                    // game is giving us a dummy value for stuff like the clarabelle task, let's just
+                    // make the percent 1 and move on
+                    percent = 1;
+                }
                 document.getElementById("progress" + i).style.width = (100 * percent).toString() + "%"
                 document.getElementById("bar" + i).style.display = "block";
                 document.getElementById("progress-text" + i).textContent = progress;
             } else {
                 document.getElementById("bar" + i).style.display = "none";
             }
+            let reward_element = document.getElementById("reward" + i);
             let reward = test.getTaskReward(i);
-            document.getElementById("reward" + i).textContent = "Reward: " + reward;
+            reward_element.style.fontSize = "38px";
+            if (reward == null) text = "";
+            else {
+                text = "Reward: " + reward;
+            }
+            reward_element.textContent = text;
+            // REALLY hacky but works. this shrinks the text until it isn't taking up two lines if it ever ends up taking two lines.
+            if (reward_element.clientHeight > 47) { // one line at 38px font size is 47, anything above it takes up two lines
+                for ( let i = 37; i > 0; i-- ) {
+                    reward_element.style.fontSize = i + "px"
+                    if (reward_element.clientHeight <= 47) {
+                        break;
+                    }
+                }
+            }
         }
     }
     setTimeout(update_data, timeout);

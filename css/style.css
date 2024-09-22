@@ -95,6 +95,7 @@
     width: 600px; 
     font-family: "Impress BT";
     color: #4f4335;
+    
 }
 
 .middle-text {
@@ -105,9 +106,12 @@
 .reward-text {
     color: #cc4d4d;
     font-size: 38px; 
-    top: 285px; 
+    margin: 0px;
+    top: 370px; 
     text-align: left; 
+    text-justify: center;
     padding-left: 40px;
+    transform: translate(0px, -100%) /* lets you align it to the left middle */
 }
 
 .progress-text {
@@ -135,7 +139,7 @@
 }
 
 .task-title-text {
-    top: 17px;
+    top: 20px;
     position: absolute; 
     font-size: 36px; 
     text-align: center; 
