@@ -51,7 +51,7 @@ function update_toontasks_and_loop() {
                 // this task type is weird and repeats text
                 objective = "Play Minigames"
             }
-            
+
             document.getElementById("text" + i).textContent = objective;
             document.getElementById("where" + i).textContent = location;
             progress = test.getTaskProgressText(i);
@@ -65,6 +65,8 @@ function update_toontasks_and_loop() {
             } else {
                 document.getElementById("bar" + i).style.display = "none";
             }
+            let reward = test.getTaskReward(i);
+            document.getElementById("reward" + i).textContent = "Reward: " + reward;
         }
     }
     setTimeout(update_data, timeout);

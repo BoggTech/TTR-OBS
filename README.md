@@ -23,12 +23,12 @@ You should be **ready to go!** Please note that, for security reasons, you will 
 
 Your ToonTasks, displayed horizontally (left -> right)
 
-**Width:** 2450, **Height:** 400
+**Width:** 2450, **Height:** 435
 
 ## html/toontask-vertical.html
 
 Your ToonTasks, displayed vertically (top -> bottom)
 
-**Width:** 650, **Height:** 1600
+**Width:** 650, **Height:** 1650
 
 # [Submit an Suggestion / Bug Report](https://github.com/BoggTech/TTR-OBS/issues/new)

@@ -17,10 +17,16 @@
 }
 
 .task-container {
-    height: 400px;
+    height: 435px;
     width: 600px;
     position: absolute;
     top: 0px;
+}
+
+.task-scroll {
+    position: absolute; 
+    height: 435px;
+    width: 600px;
 }
 
 .horizontal-one {
@@ -67,7 +73,7 @@
 
 .outer-progress {
     top: 280px; 
-    left: 150px; 
+    left: 145px; 
     position: absolute; 
     background-color: #f0dfb4; 
     width: 300px; 
@@ -79,12 +85,6 @@
     height:24px;
     width:25%; 
     height: 100%;
-}
-
-.task-scroll {
-    position: absolute; 
-    height: 400px;
-    width: 600px;
 }
 
 .text {
@@ -100,6 +100,14 @@
 .middle-text {
     padding-left: 35px;
     max-width: 520px;
+}
+
+.reward-text {
+    color: #cc4d4d;
+    font-size: 38px; 
+    top: 285px; 
+    text-align: left; 
+    padding-left: 40px;
 }
 
 .progress-text {
