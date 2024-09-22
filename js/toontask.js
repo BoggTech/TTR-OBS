@@ -37,6 +37,8 @@ function update_toontasks_and_loop() {
             element.style.display = "block";
             let location = test.getTaskLocation(i);
             let objective = test.getTaskObjective(i);
+            
+            // SPECIFIC EXCEPTIONS for some task types
             if (objective == "Visit") { // weird. but works. visit tasks only show as "visit"
                 objective = objective + " " + test.getTaskToNpcName(i)
                 place = test.getTaskToNpcBuilding(i);
@@ -45,7 +47,11 @@ function update_toontasks_and_loop() {
                 if (!place)
                     place = test.getTaskToNpcNeighborhood(i);
                 location = place;
+            } else if (objective == "Play Minigames on the Trolley") {
+                // this task type is weird and repeats text
+                objective = "Play Minigames"
             }
+            
             document.getElementById("text" + i).textContent = objective;
             document.getElementById("where" + i).textContent = location;
             progress = test.getTaskProgressText(i);

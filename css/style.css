@@ -90,7 +90,7 @@
 .text {
     top: 100px; 
     position: absolute; 
-    font-size: 44px; 
+    font-size: 42px; 
     text-align: center; 
     width: 600px; 
     font-family: "Impress BT";
@@ -98,7 +98,7 @@
 }
 
 .middle-text {
-    padding-left: 40px;
+    padding-left: 35px;
     max-width: 520px;
 }
 
