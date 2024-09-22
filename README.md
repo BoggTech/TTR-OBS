@@ -3,7 +3,7 @@
 # Toontown Rewritten OBS Overlay
 An overlay developed in HTML/JS designed to display data grabbed from the companion app API.
 
-![obs64_hqGubeNoaz](https://github.com/user-attachments/assets/869e1c58-63c3-4ad8-94ad-5b4f869d1817)
+![obs64_mWwm7EM6te](https://github.com/user-attachments/assets/9ccb5c3d-cbe8-48d5-9cef-d1613f20ba4d)
 
 # Setup Tutorial
 1. Enable **"Companion App Support"** in-game.
