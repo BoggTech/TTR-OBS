@@ -1,6 +1,7 @@
 const timeout = 3000;
 var test;
-const token_str = "ttr-token"
+const token_str = "ttr-token" // where the token is saved in localstorage
+const user_agent = "Toontown Rewritten OBS Overlay"
 
 function update_data() {
     test.updateData()
@@ -111,7 +112,7 @@ function setup_toontask_loop() {
         token = makeid(32);
         localStorage.setItem(token_str, token);
     }
-    test = new ToonData(1547, token, "OBS Toon Overlay");
+    test = new ToonData(1547, token, user_agent);
     update_data();
 }
 

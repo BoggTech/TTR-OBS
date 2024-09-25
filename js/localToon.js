@@ -16,7 +16,7 @@ class ToonData {
 
     async updateData(auth=this.token) {
         const url = `http://${URL}:${this.port}/${ENDPOINT}`;
-        const headers = {"User-Agent": this.user_agent, 
+        const headers = {"X-Requested-With": this.user_agent, 
                         "Authorization": auth, 
                         "Connection": 'close'}
         try {
