@@ -4,7 +4,7 @@ const token_str = "ttr-token" // where the token is saved in localstorage
 const user_agent = "Toontown Rewritten OBS Overlay"
 
 function update_data() {
-    test.updateData()
+    test.updateData({endpoint: "tasks"})
     .then(update_toontasks_and_loop)
     .catch((error) => {
         hide_all_scrolls();
