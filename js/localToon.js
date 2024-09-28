@@ -524,6 +524,7 @@ class ToonData {
     }
 
     getAllGolfStatNames() {
+        if (this.data.golf == null) return null;
         const arr = [];
         for ( const entry of this.data.golf ) {
             arr.push(entry.name);
@@ -544,6 +545,7 @@ class ToonData {
     }
 
     getAllRacingStatNames() {
+        if (this.data.racing == null) return null;
         const arr = [];
         for ( const entry of this.data.racing ) {
             arr.push(entry.name);
