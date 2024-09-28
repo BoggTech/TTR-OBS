@@ -16,7 +16,9 @@ https://github.com/user-attachments/assets/36c11fa5-80ae-4083-9395-12886ec5cc3b
 
 3. Allow the overlay to connect as a **Companion App**.
 
-https://github.com/user-attachments/assets/0f10f265-2c6c-4958-b563-cbdee96c4ed0
+![TTREngine64_jBYSlPIQ9t](https://github.com/user-attachments/assets/a8488701-33f1-4063-bd17-89702db9db01)
+
+**If you press no on the prompt** you may have to restart your game before the overlay will be able to request permission again.
 
 You should be **ready to go!** You will have to repeat step 3 every time you restart Toontown Rewritten.
 
